@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hector Arroyo</title>
   </head>
-  <body class="font-Inter">
-    <h1 class="text-3xl font-extrabold underline">Hello world!</h1>
+  <body class="flex flex-col font-Inter h-screen">
+    <nav
+      class="flex justify-around pb-2 pt-4 bg-zinc-800 text-slate-100 align-middle"
+    >
+      <div class="font-semibold text-lg">Hector Arroyo</div>
+      <div>
+        <div class="flex">
+          <button>
+            <img class="moon" src="img/moon.svg" alt="Currently in dark mode" />
+          </button>
+          <button class="mr-5">
+            <img class="sun" src="img/sun.svg" alt="Currently in light mode" />
+          </button>
+          <a href="https://github.com/marcarro" target="_blank" class="mr-4">
+            <img src="img/github.svg" alt="Github" />
+          </a>
+          <a href="https://linkedin.com/in/hma343" target="_blank">
+            <img src="img/linkedin.svg" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="flex flex-col bg-stone-50 text-zinc-800 dark:bg-soft-grey dark:text-stone-50 flex-grow"
+    >
+      <div class="pt-6 pl-6 pr-5 md:pt-16 md:pl-36">
+        <h1 class="text-4xl font-bold mb-4 md:text-5xl">Hello!</h1>
+        <h3
+          class="text-xl font-normal mb-5 md:mb-9 dark:text-stone-300 text-zinc-600 md:text-2xl"
+        >
+          I'm an aspiring Software Engineer and a Computer Science student @
+          ITESM. <br /><br />My main interest is backend development. See my
+          resume
+          <a
+            class="dark:hover:text-stone-300 hover:text-zinc-600 text-zinc-800 dark:text-stone-50"
+            href="assets/Resume.pdf"
+            target="_blank"
+            >here</a
+          >.
+        </h3>
+        <h2 class="text-3xl font-bold mb-3 md:text-4xl">Contact me</h2>
+        E-mail:
+        <a
+          class="font-medium text-zinc-800 hover:text-zinc-600 dark:text-stone-50 dark:hover:text-stone-300 md:text-lg"
+          href="mailto:contact@hecttp.com"
+        >
+          contact@hecttp.com
+        </a>
+      </div>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
